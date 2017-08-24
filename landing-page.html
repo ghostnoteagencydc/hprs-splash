@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html {
+                width: 100%;
+            }
+            body {
+                margin: 0;
+                color: white;
+                overflow-x: hidden;
+            }
+            .container {
+                background-position-y: bottom;
+                background-image: url('Layer 2.jpg');
+                background-size: cover;
+                height: 100%;
+            }
+            .gradient-overlay {
+                background-image: -moz-linear-gradient( 120deg, rgba(235,156,133,0.85098) 0%, rgba(70,108,148,0.91) 42%, rgb(16,63,103) 100%);
+                background-image: -webkit-linear-gradient( 120deg, rgba(235,156,133,0.85098) 0%, rgba(70,108,148,0.91) 42%, rgb(16,63,103) 100%);
+                background-image: -ms-linear-gradient( 120deg, rgba(235,156,133,0.85098) 0%, rgba(70,108,148,0.91) 42%, rgb(16,63,103) 100%);
+                opacity: 0.949;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+            .landingpage-content {
+                width: 50%;
+                position: relative;
+                z-index: 2;
+                left: 10%;
+                top: 5%;
+            }
+            .landingpage-content h2 {
+                font-size: 28px;
+                margin-bottom: 15%;
+            }
+            .landingpage-content h1 {
+                font-size: 64px;
+            }
+            .landingpage-content p {
+                font-size: 18px;
+                margin: 5% 0;
+            }
+            .landingpage-content button {
+                padding: 1em 3em;
+                color: #f05125;
+                background-color: #fff;
+                border-radius: 6px;
+                border: none;
+            }
+            .landingpage-content button:hover {
+                color: #fff;
+                background-color: #f05125;
+                cursor: pointer;
+            }
+            .social-row {
+                margin-top: 5%;
+                font-size: 50px;
+            }
+            .social-row a {
+                color: #fff;
+                text-decoration: none;
+            }
+            .social-row a:nth-child(2) {
+                margin: 0 24px;
+            }
+            .social-row a:hover {
+                color: #f05125;
+                cursor: pointer;
+            }
+            .img-row {
+                margin-top: 10%;
+            }
+            .img-row img:nth-child(2) {
+                margin: 0 24px;
+            }
+            @media screen and (max-width: 768px) {
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                .gradient-overlay {
+                    height: auto;
+                }
+                .landingpage-content {
+                    top: 0;
+                    left: 0;
+                    padding: 1em 2em;
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+                .landingpage-content h1 {
+                    font-size: 42px;
+                }
+                .landingpage-content p {
+                    margin: 10% 0;
+                }
+                .social-row {
+                    margin-top: 10%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="gradient-overlay">
+                <div class="landingpage-content">
+                    <h2>Health Policy <br> Research Scholars</h2>
+
+                    <h1>A NEW COMMUNITY FOR OUR SCHOLARS</h1>
+                    <p>We are currently working on building a new community website for all of our scholars to communicate quickly and easily, regardless of where you live. We will be periodically providing updates so keep an eye out for those to know when the new site launches! In the meantime, please log into your Blackboard account for communications.</p>
+                    <button>GO TO BLACKBOARD</button>
+
+                    <div class="social-row">
+                        <a href="https://twitter.com/hprs_jhu?lang=en" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/Health.Policy.Research.Scholars/" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company-beta/11049751/" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="img-row">
+                        <img src="RWF.png">
+                        <img src="GWU.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
