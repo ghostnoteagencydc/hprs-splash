@@ -1,0 +1,108 @@
+html, body {
+    width: 100%;
+    font-family: 'Raleway' , sans-serif;
+}
+body {
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+    background-image: url('Layer 2.jpg');
+    background-position-y: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gradient-overlay {
+    background-image: -moz-linear-gradient( 120deg, rgba(235,156,133,0.85098) 0%, rgba(70,108,148,0.91) 42%, rgb(16,63,103) 100%);
+    background-image: -webkit-linear-gradient( 120deg, rgba(235,156,133,0.85098) 0%, rgba(70,108,148,0.91) 42%, rgb(16,63,103) 100%);
+    background-image: -ms-linear-gradient( 120deg, rgba(235,156,133,0.85098) 0%, rgba(70,108,148,0.91) 42%, rgb(16,63,103) 100%);
+    opacity: 0.949;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.landingpage-content {
+    width: 65%;
+    position: relative;
+    z-index: 2;
+    left: 10%;
+    top: 5%;
+}
+.landingpage-content > img {
+    font-size: 1.75em;
+    margin-bottom: 10%;
+}
+.landingpage-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+.landingpage-content > p {
+    width: 60%;
+    font-size: 1.25em;
+    margin: 2.5% 0;
+    font-family: 'Raleway';
+}
+.landingpage-content button {
+    padding: .25em 3em;
+    color: #f05125;
+    background-color: #fff;
+    border-radius: 6px;
+    border: none;
+}
+.landingpage-content button > p {
+    font-family: 'Raleway';
+    font-size: 1.25em;
+}
+.landingpage-content button:hover {
+    color: #fff;
+    background-color: #f05125;
+    cursor: pointer;
+}
+.social-row {
+    margin-top: 5%;
+}
+.social-row a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+.social-row a:nth-child(2) {
+    margin: 0 24px;
+}
+.social-row a:hover {
+    color: #f05125;
+    cursor: pointer;
+}
+.img-row {
+    position: fixed;
+    bottom: 5%;
+}
+.img-row img:nth-child(2) {
+    margin: 0 24px;
+}
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .gradient-overlay {
+        height: auto;
+    }
+    .landingpage-content {
+        top: 0;
+        left: 0;
+        padding: 1em 2em;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .landingpage-content h1 {
+        font-size: 2.75em;
+    }
+    .landingpage-content p {
+        margin: 10% 0;
+    }
+    .social-row {
+        margin-top: 10%;
+    }
+}
